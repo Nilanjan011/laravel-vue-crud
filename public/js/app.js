@@ -1861,6 +1861,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -1921,7 +1923,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('http://localhost:8000/api/g').then(function (response) {
+    axios.get('http://localhost:8000/api/get').then(function (response) {
       return _this.users = response.data // console.log(response.data)
       ;
     })["catch"](function (error) {
@@ -2238,7 +2240,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [{
   name: 'user',
-  path: '/user',
+  path: '/',
   component: _components_Userlist_vue__WEBPACK_IMPORTED_MODULE_2__.default
 }, {
   name: 'add',
@@ -37954,7 +37956,7 @@ var render = function() {
               [
                 _c(
                   "router-link",
-                  { staticClass: "nav-item nav-link", attrs: { to: "/user" } },
+                  { staticClass: "nav-item nav-link", attrs: { to: "/" } },
                   [_vm._v("Home")]
                 ),
                 _vm._v(" "),

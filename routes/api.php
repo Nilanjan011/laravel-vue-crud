@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('add', 'App\Http\Controllers\Usercontoller@add');
-Route::get('g', 'App\Http\Controllers\Usercontoller@index');
+Route::get('get', 'App\Http\Controllers\Usercontoller@index');
 Route::get('edit/{id}', 'App\Http\Controllers\Usercontoller@edit');
 Route::post('update/{id}', 'App\Http\Controllers\Usercontoller@update');
 Route::delete('del/{id}', 'App\Http\Controllers\Usercontoller@delete');

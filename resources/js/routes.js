@@ -5,7 +5,7 @@ import Userlist from './components/Userlist.vue';
 export const routes = [
     {
         name: 'user',
-        path: '/user',
+        path: '/',
         component:Userlist
     },
     {

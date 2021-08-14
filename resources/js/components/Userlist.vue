@@ -43,7 +43,7 @@
          },
         mounted() {
             axios
-            .get('http://localhost:8000/api/g')
+            .get('http://localhost:8000/api/get')
             .then(response => (
                 this.users=response.data
                 // console.log(response.data)
