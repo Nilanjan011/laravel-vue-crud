@@ -38167,6 +38167,7 @@ var render = function() {
               }
             ],
             staticClass: "form-control",
+            class: { "is-invalid": _vm.error.email },
             attrs: { type: "text" },
             domProps: { value: _vm.email },
             on: {
@@ -38199,6 +38200,7 @@ var render = function() {
               }
             ],
             staticClass: "form-control",
+            class: { "is-invalid": _vm.error.phone },
             attrs: { type: "text" },
             domProps: { value: _vm.phone },
             on: {
@@ -38212,7 +38214,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _vm.error && _vm.error.phone
-            ? _c("div", { staticClass: "alert alert-danger" }, [
+            ? _c("div", { staticClass: "text-danger" }, [
                 _vm._v(_vm._s(_vm.error.phone[0]))
               ])
             : _vm._e()

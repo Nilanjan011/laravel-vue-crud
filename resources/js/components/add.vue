@@ -8,13 +8,13 @@
     </div>
     <div class="form-group">
         <label>Email</label>
-        <input type="text" class="form-control" v-model="email">
+        <input type="text" class="form-control" :class="{'is-invalid':error.email}" v-model="email">
         <div class="alert alert-danger" v-if="error && error.email">{{error.email[0]}}</div>
     </div>
      <div class="form-group">
         <label>phone</label>
-        <input type="text" class="form-control" v-model="phone">
-        <div class="alert alert-danger" v-if="error && error.phone">{{error.phone[0]}}</div>
+        <input type="text" class="form-control" :class="{'is-invalid':error.phone}" v-model="phone">
+        <div class="text-danger" v-if="error && error.phone">{{error.phone[0]}}</div>
     </div>
      <div class="form-group">
         <label>image</label>
@@ -35,7 +35,8 @@
                 name: "",
                 email: "",
                 phone: "",
-                error:[]
+                error:[],
+                
             };
         },
    
