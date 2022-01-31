@@ -6,6 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    {{-- vue js and api csrf_token lage na. uporere meta tag ta comment kore dakhachi thik moto insert hocha --}}
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
